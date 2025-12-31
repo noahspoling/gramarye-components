@@ -1,5 +1,6 @@
 #include "core/floor.h"
 #include "mem.h"
+#include <stddef.h>
 
 Floor *Floor_create(unsigned int level) {
     Floor *floor = Mem_alloc(sizeof(Floor), __FILE__, __LINE__);
