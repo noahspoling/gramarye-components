@@ -147,6 +147,9 @@ target_include_directories(gramarye-components PUBLIC
 # Link against gramarye-libcore
 target_link_libraries(gramarye-components PUBLIC gramarye-libcore)
 
+# Note: gramarye-components no longer depends on raylib.
+# ChunkRenderData uses RenderTexture* (opaque pointer) from the renderer interface.
+
 # Export for CMake
 include(GNUInstallDirs)
 install(TARGETS gramarye-components
